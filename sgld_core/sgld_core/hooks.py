@@ -256,5 +256,5 @@ app_license = "mit"
 
 
 override_whitelisted_methods = {
-    'upload_file': 'sgld_core.sgld_core.overrides.custom_upload_file'
+    'upload_file': 'sgld_core.overrides.custom_upload_file'
 }

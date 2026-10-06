@@ -253,3 +253,8 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+
+override_whitelisted_methods = {
+    'upload_file': 'sgld_core.sgld_core.overrides.custom_upload_file'
+}

@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TRAMITE-.YYYY.-.####",
+ "creation": "2026-10-05 23:09:26.799297",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre_completo",
+  "carnet_identidad",
+  "celular",
+  "asunto",
+  "descripcion",
+  "estado",
+  "archivo_adjunto"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre_completo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre Completo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "carnet_identidad",
+   "fieldtype": "Data",
+   "label": "Carnet de Identidad",
+   "reqd": 1
+  },
+  {
+   "fieldname": "celular",
+   "fieldtype": "Data",
+   "label": "Celular de Contacto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asunto",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asunto o Motivo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Text Editor",
+   "label": "Descripci\u00f3n Detallada",
+   "reqd": 1
+  },
+  {
+   "default": "Recibido",
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Estado del Tr\u00e1mite",
+   "options": "Recibido\nEn Revisi\u00f3n\nDerivado a Comisi\u00f3n\nFinalizado\nRechazado"
+  },
+  {
+   "fieldname": "archivo_adjunto",
+   "fieldtype": "Attach",
+   "label": "Archivo Adjunto (PDF)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-05 23:10:38.078340",
+ "modified_by": "Administrator",
+ "module": "SGLD Core",
+ "name": "Tramite Ciudadano",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Ventanilla",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Concejal",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Comisiones",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
